@@ -25,6 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.iscool.ui.theme.IsCoolTheme
+import com.example.iscool.Screens.StartGameScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,9 +46,12 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun IsCoolApp() {
+    /* //Kun ottaa alla olevan osan pois kommenteista ja laittaa PictureWithButton osan kommentteihin niin saa näkyviin StartGameScreenin
+    StartGameScreen()*/
     PictureWithButton(modifier= Modifier
         .fillMaxSize()
         .wrapContentSize(Alignment.Center))
+
 }
 
 @Composable
